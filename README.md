@@ -28,7 +28,7 @@ A partir do .Net Core 3 temos essa opção disponível nos templates .NET, podem
 
 ![imagem-1](img/img-1.png)
 
- O projeto usado neste artigo é o mesmo projeto `exemplo-dotnet-cli` onde apresentei .Net CLI [exemplo-dotnet-cli](https://github.com/marcoswoc/exemplo-dotnet-cli) .
+ O projeto usado neste artigo é o mesmo projeto [exemplo-dotnet-cli](https://github.com/marcoswoc/exemplo-dotnet-cli) onde apresentei .Net CLI.
 
 Vamos utilizar o comando `dotnet new gitignore` para criar o arquivo `.gitignore`
 
