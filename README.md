@@ -1,3 +1,4 @@
+![gitignore](img/gitignore.png)
 # Adicionando gitignore em projetos dotnet
 
 ## Introdução
@@ -22,23 +23,23 @@ Para verificar se Git está instalado utilizamos o comando:
 
 ## Criando o arquivo
 
-A partir do .Net Core 3 temos essa opção disponível nos templates .NET, podemos utilizar o comando `dotnet new --list` para listar os templates disponíveis
+A partir do .Net Core 3 temos essa opção disponível nos templates .NET, podemos utilizar o comando **`dotnet new --list`** para listar os templates disponíveis
 
     dotnet new --list
 
 ![imagem-1](img/img-1.png)
 
- O projeto usado neste artigo é o mesmo projeto `exemplo-dotnet-cli` onde apresentei .Net CLI [exemplo-dotnet-cli](https://github.com/marcoswoc/exemplo-dotnet-cli) .
+ O projeto usado neste artigo é o mesmo projeto **`exemplo-dotnet-cli`** onde apresentei .Net CLI [exemplo-dotnet-cli](https://github.com/marcoswoc/exemplo-dotnet-cli) .
 
-Vamos utilizar o comando `dotnet new gitignore` para criar o arquivo `.gitignore`
+Vamos utilizar o comando **`dotnet new gitignore`** para criar o arquivo **`.gitignore`**
 
     dotnet new gitignore
 
 ![imagem-2](img/img-2.png)
 
-Mas qual é o objetivo desse arquivo? Quando temos no projeto alguns arquivos sensíveis (exemplo: senhas) ou que podem causar alguma confusão na hora do versionamento (`/obj/*` e `/bin/*`) o git usa o `.gitignore` para indicar quais arquivos ou tipos de arquivos não devem ser rastreados para o versionamento. <br>
+Mas qual é o objetivo desse arquivo? Quando temos no projeto alguns arquivos sensíveis (exemplo: senhas) ou que podem causar alguma confusão na hora do versionamento (`/obj/*` e `/bin/*`) o git usa o **`.gitignore`** para indicar quais arquivos ou tipos de arquivos não devem ser rastreados para o versionamento. <br>
 
-Você pode também adicionar outros arquivos além dos já listados, na imagem abaixo o arquivo `segredo.json` foi adicionado ao  `.gitignore`
+Você pode também adicionar outros arquivos além dos já listados, na imagem abaixo o arquivo **`segredo.json`** foi adicionado ao  **`.gitignore`**
 
 ![imagem-3](img/img-3.png)
 
@@ -62,4 +63,5 @@ Qualquer arquivo de uma extensão
     !important.log   
 
 ## Conclusão
-O `.gitignore` é muito importante para o versionamento e segurança do código a utilização do mesmo pode evitar a exposição de dados importantes, em um projeto pessoal talvez não tenha tanto impacto expor alguma informação, mas em projetos profissionais os dados da empresa são valiosos, além de evitar versionamento de arquivos que só vão gerar volume no repositório. Um bom profissional de tecnologia preza sempre pela segurança da informação.
+
+Além de evitar versionamento de arquivos que só vão gerar volume no repositório, o `.gitignore` é muito importante para a segurança do código, a utilização do mesmo pode evitar a exposição de dados importantes, em um projeto pessoal talvez não tenha tanto impacto expor alguma informação, mas em projetos profissionais os dados da empresa são valiosos. Um bom profissional de tecnologia preza sempre pela segurança da informação.
