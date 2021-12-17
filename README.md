@@ -37,7 +37,7 @@ Vamos utilizar o comando **`dotnet new gitignore`** para criar o arquivo **`.git
 
 ![imagem-2](img/img-2.png)
 
-Mas qual é o objetivo desse arquivo? Quando temos no projeto alguns arquivos sensíveis (exemplo: senhas) ou que podem causar alguma confusão na hora do versionamento (`/obj/*` e `/bin/*`) o git usa o **`.gitignore`** para indicar quais arquivos ou tipos de arquivos não devem ser rastreados para o versionamento. <br>
+Mas qual é o objetivo desse arquivo? Quando temos no projeto alguns arquivos sensíveis que contêm senhas, configurações (appsettings.json) ou que podem causar alguma confusão na hora do versionamento (`/obj/*` e `/bin/*`) o git usa o **`.gitignore`** para indicar quais arquivos ou tipos de arquivos não devem ser rastreados para o versionamento. <br>
 
 Você pode também adicionar outros arquivos além dos já listados, na imagem abaixo o arquivo **`segredo.json`** foi adicionado ao  **`.gitignore`**
 
